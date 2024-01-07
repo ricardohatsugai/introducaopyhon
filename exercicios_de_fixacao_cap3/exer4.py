@@ -7,15 +7,13 @@ a = int(input("Entre com um valor numérico inteiro: "))
 b = int(input("Entre com outro valor numérico inteiro: "))
 c = int(input("Entre com mais um valor numérico inteiro: "))
 
-if (a > b > c):
-    print("Os valores digitados na ordem crescente são A = %i, B = %i e C = %i" % (a,b,c))
-elif(b > a > c):
-    print("Os valores digitados na ordem crescente são B = %i, A = %i e C = %i" % (b,a,c))
-elif(c > a > b):
-    print("Os valores digitados na ordem crescente são C = %i, A = %i e B = %i" % (c,a,b))
-elif(c > b > a):
-    print("Os valores digitados na ordem crescente são C = %i, B = %i e A = %i" % (c,b,a))
-elif(b > c > a):
-    print("Os valores digitados na ordem crescente são B = %i, C = %i e A = %i" % (b,c,a))
-elif(a > c > b):
-    print("Os valores digitados na ordem crescente são A = %i, C = %i e B = %i" % (a,c,b))
+# Aplicando a propriedade distribuitiva
+if(a > b):
+    a, b = b, a
+if(a > c):
+    a, c = c, a
+if(b > c):
+    b, c = c, b
+
+# Saída dos valores em ordem crescente
+print("Os valores digitados na ordem crescente são: %i, %i e %i." % (a,b,c))
