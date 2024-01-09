@@ -11,11 +11,11 @@ c = int(input("Informe o valor da variável C: "))
 d = int(input("Informe o valor da variável D: "))
 
 
-if (a % 2 == 0 and a % 3 == 0):
-    print("O valor de A é divisível por 2 e 3.")
-if (b % 2 == 0 and b % 3 == 0):
-    print("O valor de B é divisivel por 2 e 3.")
-if (c % 2 == 0 and c % 3 == 0):
-    print("O valor de C é divisível por 2 e 3.")
-if (d % 2 == 0 and d % 3 == 0):
-    print("O valor de D é divisível por 2 e 3.")
+if (a % 2 == 0 or a % 3 == 0):
+    print("O valor de A é divisível por 2 ou 3.")
+if (b % 2 == 0 or b % 3 == 0):
+    print("O valor de B é divisivel por 2 ou 3.")
+if (c % 2 == 0 or c % 3 == 0):
+    print("O valor de C é divisível por 2 ou 3.")
+if (d % 2 == 0 or d % 3 == 0):
+    print("O valor de D é divisível por 2 ou 3.")
